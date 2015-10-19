@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Tip Calculator View-->
+        <!--Main View Controller-->
         <scene sceneID="WwX-6M-uXs">
             <objects>
-                <viewController id="hqK-Lt-KP7" customClass="TipCalculatorView" sceneMemberID="viewController">
+                <viewController id="hqK-Lt-KP7" customClass="MainViewController" customModule="Tip_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WCl-rh-4Cj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="725" y="848"/>
         </scene>
-        <!--Results-->
+        <!--Results View Controller-->
         <scene sceneID="eZq-AY-pFp">
             <objects>
-                <viewController id="DCA-Wc-R3E" customClass="Results" sceneMemberID="viewController">
+                <viewController id="DCA-Wc-R3E" customClass="ResultsViewController" customModule="Tip_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HWg-5g-RWW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
