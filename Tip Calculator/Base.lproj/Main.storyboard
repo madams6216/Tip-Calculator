@@ -62,6 +62,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="krN-SE-ZY9" id="n4b-ON-hZB"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="4" minimumFontSize="17" id="wKv-hr-GEu">
                                 <rect key="frame" x="151" y="336" width="30" height="30"/>
@@ -100,6 +103,7 @@
                     <connections>
                         <outlet property="label" destination="krN-SE-ZY9" id="5cw-0b-t7i"/>
                         <outlet property="slider" destination="qpP-Tv-cp3" id="Xe8-mD-T6U"/>
+                        <outlet property="text" destination="Yxw-hb-NnY" id="GYY-aW-dgS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04S-Mr-Egv" userLabel="First Responder" sceneMemberID="firstResponder"/>

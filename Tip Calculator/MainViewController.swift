@@ -18,6 +18,8 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
         // Do any additional setup after loading the view.
     }
 
@@ -31,10 +33,11 @@ class MainViewController: UIViewController {
         
             let currentValue = Int(sender.value)
             
-            label.text = "\(currentValue)"
+            text.text = "\(currentValue)"
         
         print("Hello")
     }
+    @IBOutlet weak var text: UITextField!
     
     
     /*
