@@ -14,6 +14,14 @@ class MainViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     @IBOutlet weak var slider: UISlider!
+    
+    @IBOutlet weak var text: UITextField!
+    
+    
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +45,7 @@ class MainViewController: UIViewController {
         
         print("Hello")
     }
-    @IBOutlet weak var text: UITextField!
+    
     
     
     /*
