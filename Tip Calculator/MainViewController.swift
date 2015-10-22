@@ -9,6 +9,11 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    
+    
+    @IBOutlet weak var label: UILabel!
+    
+    @IBOutlet weak var slider: UISlider!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +28,10 @@ class MainViewController: UIViewController {
     
 
     @IBAction func sliderValueChanged(sender: UISlider) {
+        
+            let currentValue = Int(sender.value)
+            
+            label.text = "\(currentValue)"
         
         print("Hello")
     }

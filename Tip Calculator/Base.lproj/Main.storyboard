@@ -97,6 +97,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="uw4-OJ-VpU"/>
+                    <connections>
+                        <outlet property="label" destination="krN-SE-ZY9" id="5cw-0b-t7i"/>
+                        <outlet property="slider" destination="qpP-Tv-cp3" id="Xe8-mD-T6U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04S-Mr-Egv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
