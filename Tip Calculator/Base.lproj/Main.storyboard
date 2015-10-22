@@ -42,6 +42,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" id="aNW-fX-gvD">
                                 <rect key="frame" x="10" y="369" width="221" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="slider2ValueChanged:" destination="hqK-Lt-KP7" eventType="valueChanged" id="uAk-Io-Wlu"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of People:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fhg-nE-5T3">
                                 <rect key="frame" x="8" y="340" width="173" height="21"/>
@@ -66,8 +69,8 @@
                                     <outlet property="delegate" destination="krN-SE-ZY9" id="n4b-ON-hZB"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="4" minimumFontSize="17" id="wKv-hr-GEu">
-                                <rect key="frame" x="151" y="336" width="30" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="wKv-hr-GEu">
+                                <rect key="frame" x="151" y="336" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -103,7 +106,9 @@
                     <connections>
                         <outlet property="label" destination="krN-SE-ZY9" id="5cw-0b-t7i"/>
                         <outlet property="slider" destination="qpP-Tv-cp3" id="Xe8-mD-T6U"/>
+                        <outlet property="slider2" destination="aNW-fX-gvD" id="K7S-e7-9YQ"/>
                         <outlet property="text" destination="Yxw-hb-NnY" id="GYY-aW-dgS"/>
+                        <outlet property="text2" destination="wKv-hr-GEu" id="K1n-TO-qhf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="04S-Mr-Egv" userLabel="First Responder" sceneMemberID="firstResponder"/>

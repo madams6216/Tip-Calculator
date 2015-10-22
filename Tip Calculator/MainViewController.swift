@@ -18,7 +18,9 @@ class MainViewController: UIViewController {
     @IBOutlet weak var text: UITextField!
     
     
+    @IBOutlet var slider2: UISlider!
     
+    @IBOutlet var text2: UITextField!
     
     
     
@@ -36,6 +38,14 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func slider2ValueChanged(sender: UISlider) {
+        let currentValue = Int(sender.value)
+        
+        text2.text = "\(currentValue)"
+    
+    
+    
+       }
 
     @IBAction func sliderValueChanged(sender: UISlider) {
         
@@ -46,7 +56,7 @@ class MainViewController: UIViewController {
         print("Hello")
     }
     
-    
+        }
     
     /*
     // MARK: - Navigation
@@ -58,4 +68,4 @@ class MainViewController: UIViewController {
     }
     */
 
-}
+
