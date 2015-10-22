@@ -22,6 +22,12 @@ class MainViewController: UIViewController {
     }
     
 
+    @IBAction func sliderValueChanged(sender: UISlider) {
+        
+        print("Hello")
+    }
+    
+    
     /*
     // MARK: - Navigation
 
