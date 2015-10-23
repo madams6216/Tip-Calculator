@@ -9,10 +9,23 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
+    
+    
+   
+    @IBOutlet weak var Label: UILabel!
+    
+    
+    var LabelText = String()
+    
+    
+
 
     override func viewDidLoad() {
+        
+        Label.text = LabelText
+        
         super.viewDidLoad()
-
+   
         // Do any additional setup after loading the view.
     }
 

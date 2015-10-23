@@ -24,6 +24,9 @@ class MainViewController: UIViewController {
     
     
     
+    @IBOutlet weak var TextField: UITextField!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +39,15 @@ class MainViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let DestViewController : ResultsViewController = segue.destinationViewController as! ResultsViewController
+        
+        DestViewController.LabelText = TextField.text!
+    }
+    
     
     @IBAction func slider2ValueChanged(sender: UISlider) {
         let currentValue = Int(sender.value)
