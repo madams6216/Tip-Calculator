@@ -17,12 +17,23 @@ class ResultsViewController: UIViewController {
     
     var LabelText = String()
     
+    @IBOutlet weak var TipLabel: UILabel!
+    var TipLabelText = String()
     
+    
+    
+    @IBOutlet weak var TotalLabel: UILabel!
+    var TotalLabelText = String()
 
+    @IBOutlet weak var SplitTotalLabel: UILabel!
+    var SplitTotalLabelText = String()
 
     override func viewDidLoad() {
         
         Label.text = LabelText
+        TipLabel.text = "$0.00"
+        TotalLabel.text = "$0.00"
+        SplitTotalLabel.text = "$0.00"
         
         super.viewDidLoad()
    
