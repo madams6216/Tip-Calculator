@@ -88,6 +88,8 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         
         DestViewController.text = text.text!
         
+        DestViewController.text2 = text2.text!
+        
     }
     
     

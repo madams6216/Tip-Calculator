@@ -24,7 +24,11 @@ class ResultsViewController: UIViewController {
     
     @IBOutlet weak var TotalLabel: UILabel!
     var TotalLabelText = String()
-
+    var text2 = String()
+    
+    
+    
+    
     @IBOutlet weak var SplitTotalLabel: UILabel!
     var SplitTotalLabelText = String()
 
@@ -32,8 +36,8 @@ class ResultsViewController: UIViewController {
         
         Label.text = LabelText
         TipLabel.text = text
-        TotalLabel.text = "$0.00"
-        SplitTotalLabel.text = "$0.00"
+        TotalLabel.text = LabelText
+        SplitTotalLabel.text = text2
         
         super.viewDidLoad()
    
