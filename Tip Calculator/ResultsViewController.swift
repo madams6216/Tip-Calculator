@@ -19,7 +19,7 @@ class ResultsViewController: UIViewController {
     
     @IBOutlet weak var TipLabel: UILabel!
     var TipLabelText = String()
-    
+
     
     
     @IBOutlet weak var TotalLabel: UILabel!

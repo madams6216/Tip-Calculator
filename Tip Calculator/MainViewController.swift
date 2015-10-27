@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UITextFieldDelegate {
     
     
     @IBOutlet weak var label: UILabel!
@@ -30,15 +30,54 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
+        view.addGestureRecognizer(tap)
+    }
+    
+    //Calls this function when the tap is recognized.
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    
 
+        TextField.delegate = self
+//        TextField.keyboardType = UIKeyboardType.Default
+        TextField.returnKeyType = UIReturnKeyType.Done
         
         
         // Do any additional setup after loading the view.
     }
 
+    
+    
+    //Text Field Delegate
+    
+    @objc func textFieldShouldReturn(textField: UITextField) -> Bool {
+        
+        print("Resign First Responder")
+        TextField.resignFirstResponder()
+        
+        return true;
+        
+        
+    
+    }
+    
+    
+    
+    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        print("This works")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        
+        
         
     }
     
@@ -54,8 +93,7 @@ class MainViewController: UIViewController {
         
         text2.text = "\(currentValue)"
     
-    
-    
+           
        }
 
     @IBAction func sliderValueChanged(sender: UISlider) {
@@ -63,9 +101,11 @@ class MainViewController: UIViewController {
             let currentValue = Int(sender.value)
             
             text.text = "\(currentValue)"
-        
+        slider.resignFirstResponder()
         print("Hello")
     }
+    
+    
     
         }
     
