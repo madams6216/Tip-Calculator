@@ -85,6 +85,9 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         let DestViewController : ResultsViewController = segue.destinationViewController as! ResultsViewController
         
         DestViewController.LabelText = TextField.text!
+        
+        DestViewController.text = text.text!
+        
     }
     
     
