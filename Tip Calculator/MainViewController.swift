@@ -103,7 +103,7 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         
             let currentValue = Int(sender.value)
             
-            text.text = "\(currentValue)"
+            text.text = "\(currentValue)%"
         slider.resignFirstResponder()
         print("Hello")
     }
