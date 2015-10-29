@@ -95,14 +95,16 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         let currentValue = Int(sender.value)
         
         text2.text = "\(currentValue)"
-        tipAmount = currentValue
+        
            
        }
 
     @IBAction func sliderValueChanged(sender: UISlider) {
         
+        
+        
             let currentValue = Int(sender.value)
-            
+            tipAmount = currentValue
             text.text = "\(currentValue)%"
         slider.resignFirstResponder()
         print("Hello")
