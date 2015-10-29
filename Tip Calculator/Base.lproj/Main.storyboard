@@ -75,14 +75,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ngj-sY-nIA">
-                                <rect key="frame" x="75" y="510" width="131" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Tip Calculator"/>
-                                <connections>
-                                    <segue destination="DCA-Wc-R3E" kind="push" id="vOx-b7-hRp"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" minimumFontSize="17" id="9nq-V8-tRB">
                                 <rect key="frame" x="8" y="161" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -95,6 +87,14 @@
                                     <outlet property="delegate" destination="hqK-Lt-KP7" id="OlI-Mm-1hz"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ngj-sY-nIA">
+                                <rect key="frame" x="95" y="510" width="131" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tip Calculator"/>
+                                <connections>
+                                    <segue destination="DCA-Wc-R3E" kind="push" id="vOx-b7-hRp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.2416110296" green="0.80086016410000005" blue="0.17304057740000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
