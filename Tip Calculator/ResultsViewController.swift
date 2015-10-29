@@ -13,31 +13,23 @@ class ResultsViewController: UIViewController {
     
    
     @IBOutlet weak var Label: UILabel!
-    var text = String()
-    
-    var LabelText = String()
-    
     @IBOutlet weak var TipLabel: UILabel!
-    var TipLabelText = String()
-
-    
-    
     @IBOutlet weak var TotalLabel: UILabel!
-    var TotalLabelText = String()
-    var text2 = String()
-    
-    
-    
-    
     @IBOutlet weak var SplitTotalLabel: UILabel!
-    var SplitTotalLabelText = String()
-
+    
+    var tipAmount: Int = 0
+    var billAmount: Double = 0
+    var personCount: Int = 0
+    
     override func viewDidLoad() {
         
-        Label.text = LabelText
-        TipLabel.text = text
-        TotalLabel.text = LabelText
-        SplitTotalLabel.text = text2
+        let total = billAmount + (billAmount * (Double(tipAmount)/100))
+        let splitAmount = total / Double(personCount)
+        
+        Label.text = String(billAmount)
+        TipLabel.text = String(tipAmount)
+        TotalLabel.text = String(total)
+        SplitTotalLabel.text = String(splitAmount)
         
         super.viewDidLoad()
    

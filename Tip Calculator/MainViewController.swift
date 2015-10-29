@@ -26,7 +26,7 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var TextField: UITextField!
     
-    
+    var tipAmount : Int?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +62,7 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         return true;
         
         
-    
+      
     }
     
     
@@ -84,11 +84,9 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let DestViewController : ResultsViewController = segue.destinationViewController as! ResultsViewController
         
-        DestViewController.LabelText = TextField.text!
-        
-        DestViewController.text = text.text!
-        
-        DestViewController.text2 = text2.text!
+        DestViewController.billAmount = Double(TextField.text!)!
+        DestViewController.tipAmount = tipAmount!
+        DestViewController.personCount = Int(text2.text!)!
         
     }
     
@@ -97,7 +95,7 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         let currentValue = Int(sender.value)
         
         text2.text = "\(currentValue)"
-    
+        tipAmount = currentValue
            
        }
 
