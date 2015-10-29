@@ -26,10 +26,10 @@ class ResultsViewController: UIViewController {
         let total = billAmount + (billAmount * (Double(tipAmount)/100))
         let splitAmount = total / Double(personCount)
         
-        Label.text = String(billAmount)
-        TipLabel.text = String(tipAmount)
-        TotalLabel.text = String(total)
-        SplitTotalLabel.text = String(splitAmount)
+        Label.text = "$" + String(billAmount)
+        TipLabel.text = String(tipAmount) + "%"
+        TotalLabel.text = "$" + String(total)
+        SplitTotalLabel.text = "$" + String(splitAmount)
         
         super.viewDidLoad()
    
